@@ -21,8 +21,9 @@ void SortLine(int[,] matrix){
 void PrintArray(int[,] matrix){
     for (int i = 0; i < matrix.GetLength(0); i++){
         for (int j = 0; j < matrix.GetLength(1); j++){
-            Console.Write($"Массив выглядит так: {matrix[i, j]}");
+            Console.Write($"{matrix[i, j]}"+" ");
         }
+        Console.WriteLine();
     }
     Console.WriteLine();
 }

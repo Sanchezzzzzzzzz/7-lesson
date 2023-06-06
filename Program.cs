@@ -67,5 +67,28 @@ MakeArray(matrix2);
 PrintArray(matrix1);
 PrintArray(matrix2);
 MultipMatrix(matrix1, matrix2);
+//Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+void Make3DArray(int[,,] arr){
+    for(int i = 0; i<arr.GetLength(0); i++){
+        for(int j = 0; j<arr.GetLength(1); j++){
+            for(int k = 0; k < arr.GetLength(2); k++){
+                arr[i,j,k] = new Random().Next(1, 10);
+            }
+        }
+    }
+}
+void Print3DArrayIdx(int[,,] arr){
+    for(int i = 0; i<arr.GetLength(0); i++){
+        for(int j = 0; j<arr.GetLength(1); j++){
+            for(int k = 0; k < arr.GetLength(2); k++){
+                Console.Write($"{arr[i,j,k]}{(i,j,k)}");
+            }
+        }
+    }
+}
+int[,,] array3D = new int[2,2,2];
+Make3DArray(array3D);
+Print3DArrayIdx(array3D);
+
 
 

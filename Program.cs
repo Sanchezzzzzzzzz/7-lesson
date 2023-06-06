@@ -54,7 +54,7 @@ void MultipMatrix(int[,] array, int[,] array1){
     for(int i=0; i<array.GetLength(0); i++){
         for(int j=0; j<array.GetLength(1); j++){
             int k=array[i, j]*array1[i,j];
-            Console.Write($"{k}");
+            Console.Write($"{k}"+" ");
         }
         Console.WriteLine();
     }

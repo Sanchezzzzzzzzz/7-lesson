@@ -83,8 +83,11 @@ void Print3DArrayIdx(int[,,] arr){
             for(int k = 0; k < arr.GetLength(2); k++){
                 Console.Write($"{arr[i,j,k]}{(i,j,k)}");
             }
+            Console.WriteLine();
         }
+        Console.WriteLine();
     }
+    Console.WriteLine();
 }
 int[,,] array3D = new int[2,2,2];
 Make3DArray(array3D);

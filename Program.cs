@@ -49,4 +49,23 @@ int[,] array1 = new int[7, 3];
 MakeArray(array1);
 PrintArray(array1);
 MinSumLine(array1);
+// Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+void MultipMatrix(int[,] array, int[,] array1){
+    for(int i=0; i<array.GetLength(0); i++){
+        for(int j=0; j<array.GetLength(1); j++){
+            int k=array[i, j]*array1[i,j];
+            Console.Write($"{k}");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+int[,] matrix1 = new int[3, 3];
+int[,] matrix2 = new int[3, 3];
+MakeArray(matrix1);
+MakeArray(matrix2);
+PrintArray(matrix1);
+PrintArray(matrix2);
+MultipMatrix(matrix1, matrix2);
+
 

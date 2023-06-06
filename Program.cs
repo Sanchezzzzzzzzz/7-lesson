@@ -40,7 +40,7 @@ void MinSumLine(int[,] matrix){
         for (int j = 0; j < matrix.GetLength(1); j++){
             summ+=matrix[i,j];
         }
-        if(minn>summ) summ=minn;
+        if(minn>summ) minn=summ;
     }
     Console.Write($"Минимальная сумма среди строк: {minn}");
     Console.WriteLine();

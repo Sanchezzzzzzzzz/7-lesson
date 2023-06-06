@@ -27,8 +27,9 @@ void PrintArray(int[,] matrix){
     }
     Console.WriteLine();
 }
-int[,] array = new int[4, 5];
+int[,] array = new int[7, 4];
 MakeArray(array);
 PrintArray(array);
 SortLine(array);
 PrintArray(array);
+//Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
